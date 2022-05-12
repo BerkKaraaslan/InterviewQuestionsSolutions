@@ -17,6 +17,7 @@ public class Problem3 {
                 isSorted = false;
                 startIndex = i;
                 value = numbers[i];
+                break;
             }
         }
 
@@ -27,6 +28,7 @@ public class Problem3 {
         for(int i = 0; i < numbers.length; i++){ 
             if(numbers[i] > value){
                 endIndex = i - 1;
+                break;
             }
         }
 
@@ -38,7 +40,7 @@ public class Problem3 {
     }
     
     public static void main(String[] args) {
-        int[] numbers = {1,1,8,3,4,5,6,7,10};
+        int[] numbers = {100,1,2,3,4};
         System.out.println(getSmallestWindowToBeSorted(numbers));
     }
 }
